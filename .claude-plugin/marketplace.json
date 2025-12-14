@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "agent-council",
-      "source": ".",
+      "source": "./",
       "description": "Collect and synthesize opinions from multiple AI Agents",
       "version": "1.0.0"
     }
