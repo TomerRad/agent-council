@@ -14,8 +14,8 @@ set -e
 
 # Get script directory and find config
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PLUGIN_ROOT="$(cd "$SCRIPT_DIR/../../.." && pwd)"
-CONFIG_FILE="$PLUGIN_ROOT/council.config.yaml"
+CLAUDE_DIR="$(cd "$SCRIPT_DIR/../.." && pwd)"
+CONFIG_FILE="$CLAUDE_DIR/council.config.yaml"
 
 # Colors
 RED='\033[0;31m'

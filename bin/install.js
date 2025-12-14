@@ -11,6 +11,7 @@ const NC = '\x1b[0m';
 
 const packageRoot = path.resolve(__dirname, '..');
 const targetDir = process.cwd();
+const claudeDir = path.join(targetDir, '.claude');
 
 console.log(`${CYAN}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}`);
 console.log(`${CYAN}  Agent Council - Installation${NC}`);
@@ -38,24 +39,29 @@ function copyRecursive(src, dest) {
 }
 
 try {
-  // Copy skills folder
-  const skillsSrc = path.join(packageRoot, 'skills');
-  const skillsDest = path.join(targetDir, 'skills');
+  // Create .claude directory if not exists
+  if (!fs.existsSync(claudeDir)) {
+    fs.mkdirSync(claudeDir, { recursive: true });
+  }
+
+  // Copy skills folder to .claude/skills/
+  const skillsSrc = path.join(packageRoot, 'skills', 'agent-council');
+  const skillsDest = path.join(claudeDir, 'skills', 'agent-council');
 
   if (fs.existsSync(skillsSrc)) {
     console.log(`${YELLOW}Installing skills...${NC}`);
     copyRecursive(skillsSrc, skillsDest);
-    console.log(`${GREEN}  ✓ skills/agent-council${NC}`);
+    console.log(`${GREEN}  ✓ .claude/skills/agent-council${NC}`);
   }
 
-  // Copy config file if not exists
+  // Copy config file to .claude/ if not exists
   const configSrc = path.join(packageRoot, 'council.config.yaml');
-  const configDest = path.join(targetDir, 'council.config.yaml');
+  const configDest = path.join(claudeDir, 'council.config.yaml');
 
   if (fs.existsSync(configSrc) && !fs.existsSync(configDest)) {
     console.log(`${YELLOW}Installing config...${NC}`);
     fs.copyFileSync(configSrc, configDest);
-    console.log(`${GREEN}  ✓ council.config.yaml${NC}`);
+    console.log(`${GREEN}  ✓ .claude/council.config.yaml${NC}`);
   } else if (fs.existsSync(configDest)) {
     console.log(`${YELLOW}  ⓘ council.config.yaml already exists, skipping${NC}`);
   }
@@ -70,7 +76,7 @@ try {
   console.log(`  "Let's hear opinions from other AIs"`);
   console.log();
   console.log(`${CYAN}Direct execution:${NC}`);
-  console.log(`  ./skills/agent-council/scripts/council.sh "your question"`);
+  console.log(`  .claude/skills/agent-council/scripts/council.sh "your question"`);
   console.log();
   console.log(`${YELLOW}Note: Make sure codex and gemini CLIs are installed.${NC}`);
 
