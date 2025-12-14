@@ -1,0 +1,21 @@
+{
+  "name": "agent-council",
+  "version": "1.0.0",
+  "description": "Collect and synthesize opinions from multiple AI Agents. Inspired by Karpathy's LLM Council.",
+  "author": {
+    "name": "Team Attention",
+    "url": "https://github.com/team-attention"
+  },
+  "repository": "https://github.com/team-attention/agent-council",
+  "homepage": "https://github.com/team-attention/agent-council",
+  "license": "MIT",
+  "keywords": [
+    "llm",
+    "council",
+    "multi-agent",
+    "ai",
+    "codex",
+    "gemini",
+    "claude"
+  ]
+}

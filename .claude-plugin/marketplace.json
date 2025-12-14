@@ -1,0 +1,15 @@
+{
+  "name": "team-attention-plugins",
+  "owner": {
+    "name": "Team Attention",
+    "url": "https://github.com/team-attention"
+  },
+  "plugins": [
+    {
+      "name": "agent-council",
+      "source": ".",
+      "description": "Collect and synthesize opinions from multiple AI Agents",
+      "version": "1.0.0"
+    }
+  ]
+}
